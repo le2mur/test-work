@@ -1,0 +1,24 @@
+{
+    "name": "test/test",
+    "type": "project",
+    "require": {
+        "slim/slim": "3.*",
+        "illuminate/database": "^8.69",
+        "ext-mysqli": "*",
+        "ext-json": "*",
+        "illuminate/pagination": "^8.69"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.6",
+        "phpunit/phpunit": "8.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "api\\": "api/",
+            "controller\\": "api/controller/",
+            "model\\":"api/model/",
+            "service\\":"api/service/",
+            "test\\":"api/test/"
+        }
+    }
+}
